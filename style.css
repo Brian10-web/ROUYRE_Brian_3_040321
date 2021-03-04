@@ -4,9 +4,21 @@ body
     margin: 0;
 }
 /* HEADER - SECTION HEAD*/
+#logo
+{
+    height: 30px;
+    text-align: center;
+}
+
+.logoImg
+{
+    width: 60%;
+}
+
 #head-style
 {
     background-color: #F2F2F2;
+    text-align: center;
 }
 
 .darker
@@ -14,7 +26,15 @@ body
     background-color: grey;
 }
 /* SECTION - FONCTIONNEMENT */
-
+#fonctionnement li
+{
+    border: 2px solid #F2F2F2;
+    border-radius: 15px;
+    background-color: #F2F2F2;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    list-style-type: none;
+}
 /* MAIN - SECTION RESTAURANTS */
 #Res
 {
