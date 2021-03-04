@@ -1,4 +1,98 @@
+/* BODY */
 body
 {
-    color: blue;
+    margin: 0;
+}
+/* HEADER - SECTION HEAD*/
+#head-style
+{
+    background-color: #F2F2F2;
+}
+
+.darker
+{
+    background-color: grey;
+}
+/* SECTION - FONCTIONNEMENT */
+
+/* MAIN - SECTION RESTAURANTS */
+#Res
+{
+    background-color: #F2F2F2;
+    width: 100%;
+}
+
+#Res a
+{
+    text-decoration: none;
+    color: black;
+}
+
+#Res h3
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#Res p
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.ResUl
+{
+    padding: 0;
+}
+
+.ResLi
+{
+    width: 94%;
+    border-radius: 15px;
+	background-color: white;
+	list-style-type: none;
+	margin: 10px;
+	box-shadow: 5px 5px 15px -10px;
+}
+
+.ResImg
+{
+    border-radius: 15px 15px 0px 0px;
+	overflow: hidden;
+	margin: 5px;
+	height: 120px;
+}
+
+.paletteImg
+{
+    width: 100%;
+}
+
+.noteImg
+{
+    width: 100%;
+}
+
+.francaiseImg
+{
+    width: 100%;
+}
+
+.deliceImg
+{
+    width: 100%;
+}
+
+.legImg
+{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 1px;
+}
+
+/* FOOTER */
+footer
+{
+    background-color: black;
+    color: white;
 }
