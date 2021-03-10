@@ -1,0 +1,19 @@
+{
+  "name": "rouyre_brian_3_040321",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/app.scss:.css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brian10-web/ROUYRE_Brian_3_040321.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Brian10-web/ROUYRE_Brian_3_040321/issues"
+  },
+  "homepage": "https://github.com/Brian10-web/ROUYRE_Brian_3_040321#readme"
+}

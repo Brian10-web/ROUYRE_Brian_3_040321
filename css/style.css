@@ -116,3 +116,28 @@ footer
     background-color: black;
     color: white;
 }
+
+
+
+/* PAGES MENU */
+
+.headpages
+{
+    display: flex;
+}
+
+.button
+{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.logohead
+{
+    text-align: center;
+}
+
+.menuImg
+{
+    margin: 0;
+}
