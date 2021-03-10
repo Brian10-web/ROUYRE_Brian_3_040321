@@ -126,7 +126,7 @@ footer
     display: flex;
 }
 
-.button
+.buttonRetour
 {
     margin-top: 20px;
     margin-left: 20px;
@@ -140,4 +140,21 @@ footer
 .menuImg
 {
     margin: 0;
+}
+
+.buttonCom
+{
+    border-radius: 20px;
+    color: white;
+    background-color: purple;
+}
+
+.commande
+{
+    text-align: center;
+}
+
+section li
+{
+    list-style-type: none;
 }
