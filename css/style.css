@@ -23,7 +23,7 @@ body {
 }
 
 .logoImg {
-  width: 200px;
+  width: 150px;
 }
 
 #head-style {
@@ -36,6 +36,10 @@ body {
 }
 
 /* SECTION - FONCTIONNEMENT */
+#fonctionnement {
+  margin-left: 20px;
+}
+
 #fonctionnement li {
   border: 2px solid #F2F2F2;
   border-radius: 15px;
@@ -43,6 +47,29 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
   list-style-type: none;
+  display: flex;
+}
+
+#fonctionnement ul {
+  padding-left: 0;
+}
+
+#fonctionnement i {
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+  top: 22px;
+}
+
+.number-style {
+  position: relative;
+  left: -10px;
+  border: 0px solid #9356DC;
+  background-color: #9356DC;
+  color: white;
+  border-radius: 48px;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 /* MAIN - SECTION RESTAURANTS */
@@ -68,6 +95,8 @@ body {
 
 .ResUl {
   padding: 0;
+  margin: 0;
+  padding-bottom: 40px;
 }
 
 .ResLi {
@@ -84,6 +113,8 @@ body {
   overflow: hidden;
   margin: 5px;
   height: 120px;
+  position: relative;
+  top: 5px;
 }
 
 .paletteImg {
@@ -106,6 +137,14 @@ body {
   margin-left: 10px;
   margin-bottom: 10px;
   padding-bottom: 1px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.legImg i {
+  position: relative;
+  top: 20px;
+  right: 20px;
 }
 
 /* FOOTER */
@@ -119,6 +158,8 @@ footer ul {
   margin: 0;
   list-style-type: none;
   padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 /* PAGES MENU */
@@ -126,7 +167,7 @@ footer ul {
   display: flex;
 }
 
-.buttonRetour {
+.retour {
   margin-top: 20px;
   margin-left: 20px;
   position: absolute;
@@ -144,13 +185,16 @@ footer ul {
   z-index: 1;
 }
 
-.buttonCom {
+.button-style {
   border-radius: 20px;
   color: white;
-  background-color: #9356DC;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   height: 30px;
-  border: 1px solid #9356DC;
+  border: 0px solid #9356DC;
   margin-top: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 30px;
 }
 
 .commande {
@@ -199,9 +243,15 @@ footer ul {
   margin-bottom: 0px;
 }
 
+.ellipsis {
+  width: 80%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .titleMenu {
   margin-left: 20px;
-  border-bottom: 3px solid #99E2D0;
 }
 
 .AlignP {
@@ -223,8 +273,19 @@ footer i {
   font-size: 10px;
 }
 
-.police {
+.omf-style {
   font-family: "shrikhandregular";
+  margin-bottom: 15px;
+}
+
+hr {
+  width: 40px;
+  position: relative;
+  background-color: #99E2D0;
+  border: none;
+  height: 3px;
+  margin-top: 2px;
+  margin-left: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
