@@ -1,0 +1,20 @@
+.button-style
+{
+    border-radius: 20px;
+    color: white;
+    background: linear-gradient(to bottom right, #FF79DA,  #9356DC); 
+    height: 30px;
+    border: 0px solid #9356DC;
+    margin-top: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 30px;
+}
+
+.commande
+{
+    display: flex;
+    text-align: center;
+    height: 100px;
+    justify-content: center;
+}

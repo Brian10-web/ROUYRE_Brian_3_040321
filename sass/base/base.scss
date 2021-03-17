@@ -13,3 +13,26 @@
     font-weight: normal;
     font-style: normal;
 }
+
+body
+{
+    margin: 0;
+    font-family: 'robotoregular';
+}
+
+.omf-style
+{
+    font-family: 'shrikhandregular';
+    margin-bottom: 15px;
+}
+
+hr
+{
+    width: 40px;
+    position: relative;
+    background-color: #99E2D0;
+    border: none;
+    height: 3px;
+    margin-top: 2px;
+    margin-left: 20px;
+}

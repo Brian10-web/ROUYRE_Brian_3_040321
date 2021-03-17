@@ -10,13 +10,153 @@
   font-weight: normal;
   font-style: normal;
 }
-/* BODY */
 body {
   margin: 0;
   font-family: "robotoregular";
 }
 
-/* HEADER - SECTION HEAD*/
+.omf-style {
+  font-family: "shrikhandregular";
+  margin-bottom: 15px;
+}
+
+hr {
+  width: 40px;
+  position: relative;
+  background-color: #99E2D0;
+  border: none;
+  height: 3px;
+  margin-top: 2px;
+  margin-left: 20px;
+}
+
+.darker {
+  background-color: grey;
+}
+
+.heart-style i:hover {
+  background: linear-gradient(to top, #FF79DA, #9356DC);
+}
+
+/* PAGES MENU */
+.headpages {
+  display: flex;
+}
+
+.retour {
+  margin-top: 20px;
+  margin-left: 20px;
+  position: absolute;
+}
+
+.logohead {
+  text-align: center;
+  width: 100%;
+}
+
+.pagesMain {
+  background-color: #F2F2F2;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+  position: relative;
+  z-index: 2;
+  margin-top: -125px;
+  width: 96%;
+  padding-top: 1px;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.pagesMain li {
+  list-style-type: none;
+}
+.pagesMain ul {
+  padding: 0;
+}
+.pagesMain h1 {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-family: shrikhandregular;
+}
+.pagesMain .titleMenu {
+  margin-left: 20px;
+}
+.pagesMain .titleMain {
+  display: flex;
+  justify-content: space-between;
+}
+.pagesMain .titleMain i {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.designLi {
+  border: 2px solid white;
+  margin: 10px;
+  border-radius: 20px;
+  background-color: white;
+}
+.designLi h3 {
+  margin: 10px;
+  margin-bottom: 0px;
+  margin-top: 2px;
+}
+.designLi .ellipsis {
+  width: 80%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.designLi .AlignP {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.designLi p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* FOOTER */
+footer {
+  background-color: black;
+  color: white;
+  margin: 0;
+}
+footer ul {
+  margin: 0;
+  list-style-type: none;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+footer i {
+  width: 20px;
+}
+
+.fas {
+  font-size: 10px;
+}
+
+.button-style {
+  border-radius: 20px;
+  color: white;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  height: 30px;
+  border: 0px solid #9356DC;
+  margin-top: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 30px;
+}
+
+.commande {
+  display: flex;
+  text-align: center;
+  height: 100px;
+  justify-content: center;
+}
+
 #logo {
   height: 30px;
   text-align: center;
@@ -26,95 +166,11 @@ body {
   width: 150px;
 }
 
-#head-style {
-  background-color: #F2F2F2;
-  text-align: center;
-}
-
-.darker {
-  background-color: grey;
-}
-
-/* SECTION - FONCTIONNEMENT */
-#fonctionnement {
-  margin-left: 20px;
-}
-
-#fonctionnement li {
-  border: 2px solid #F2F2F2;
-  border-radius: 15px;
-  background-color: #F2F2F2;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  list-style-type: none;
-  display: flex;
-}
-
-#fonctionnement ul {
-  padding-left: 0;
-}
-
-#fonctionnement i {
-  margin-left: 20px;
-  margin-right: 20px;
-  position: relative;
-  top: 22px;
-}
-
-.number-style {
-  position: relative;
-  left: -10px;
-  border: 0px solid #9356DC;
-  background-color: #9356DC;
-  color: white;
-  border-radius: 48px;
-  padding-left: 6px;
-  padding-right: 6px;
-}
-
-/* MAIN - SECTION RESTAURANTS */
-#Res {
-  background-color: #F2F2F2;
-  width: 100%;
-}
-
-#Res a {
-  text-decoration: none;
-  color: black;
-}
-
-#Res h3 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-#Res p {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.ResUl {
-  padding: 0;
-  margin: 0;
-  padding-bottom: 40px;
-}
-
-.ResLi {
-  width: 94%;
-  border-radius: 15px;
-  background-color: white;
-  list-style-type: none;
-  margin: 10px;
-  box-shadow: 5px 5px 15px -10px;
-}
-
 .ResImg {
   border-radius: 15px 15px 0px 0px;
   overflow: hidden;
-  margin: 5px;
+  margin: 0px;
   height: 120px;
-  position: relative;
-  top: 5px;
 }
 
 .paletteImg {
@@ -147,37 +203,6 @@ body {
   right: 20px;
 }
 
-/* FOOTER */
-footer {
-  background-color: black;
-  color: white;
-  margin: 0;
-}
-
-footer ul {
-  margin: 0;
-  list-style-type: none;
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-/* PAGES MENU */
-.headpages {
-  display: flex;
-}
-
-.retour {
-  margin-top: 20px;
-  margin-left: 20px;
-  position: absolute;
-}
-
-.logohead {
-  text-align: center;
-  width: 100%;
-}
-
 .menuImg {
   height: 300px;
   margin: 0;
@@ -185,107 +210,80 @@ footer ul {
   z-index: 1;
 }
 
-.button-style {
-  border-radius: 20px;
-  color: white;
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  height: 30px;
-  border: 0px solid #9356DC;
-  margin-top: 25px;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-bottom: 30px;
-}
-
-.commande {
-  display: flex;
-  text-align: center;
-  height: 100px;
-  justify-content: center;
-}
-
-.main li {
-  list-style-type: none;
-}
-
-.main ul {
-  padding: 0;
-}
-
-.main {
+#head-style {
   background-color: #F2F2F2;
-  border-top-left-radius: 45px;
-  border-top-right-radius: 45px;
-  position: relative;
-  z-index: 2;
-  margin-top: -125px;
-  width: 96%;
-  padding-top: 1px;
-  padding-left: 2%;
-  padding-right: 2%;
+  text-align: center;
 }
 
-.main h1 {
-  margin-top: 20px;
-  margin-left: 20px;
-  font-family: shrikhandregular;
+.indexMain {
+  background-color: #F2F2F2;
+  width: 100%;
 }
-
-.designLi {
-  border: 2px solid white;
-  margin: 10px;
-  border-radius: 20px;
-  background-color: white;
+.indexMain a {
+  text-decoration: none;
+  color: black;
 }
-
-.designLi h3 {
-  margin: 10px;
-  margin-bottom: 0px;
-}
-
-.ellipsis {
-  width: 80%;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.titleMenu {
-  margin-left: 20px;
-}
-
-.AlignP {
-  display: flex;
-  justify-content: space-between;
+.indexMain h2 {
   margin-left: 10px;
-  margin-right: 10px;
+  padding-top: 30px;
+}
+.indexMain h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.indexMain p {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.main p {
-  margin-top: 5px;
+.ResUl {
+  padding: 0;
+  margin: 0;
+  padding-bottom: 40px;
 }
 
-footer i {
-  width: 20px;
+.ResLi {
+  width: 94%;
+  border-radius: 15px;
+  background-color: white;
+  list-style-type: none;
+  margin: 10px;
+  box-shadow: 5px 5px 15px -10px;
 }
 
-.fas {
-  font-size: 10px;
-}
-
-.omf-style {
-  font-family: "shrikhandregular";
-  margin-bottom: 15px;
-}
-
-hr {
-  width: 40px;
-  position: relative;
-  background-color: #99E2D0;
-  border: none;
-  height: 3px;
-  margin-top: 2px;
+.fonctionnement {
   margin-left: 20px;
+}
+.fonctionnement li {
+  border: 2px solid #F2F2F2;
+  border-radius: 15px;
+  background-color: #F2F2F2;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  list-style-type: none;
+  display: flex;
+  margin-right: 20px;
+}
+.fonctionnement ul {
+  padding-left: 0;
+}
+.fonctionnement i {
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.number-style {
+  position: relative;
+  left: -10px;
+  border: 0px solid #9356DC;
+  background-color: #9356DC;
+  color: white;
+  border-radius: 48px;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 /*# sourceMappingURL=style.css.map */

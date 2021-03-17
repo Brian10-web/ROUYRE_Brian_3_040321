@@ -1,5 +1,9 @@
 
-@import 'layouts/base.scss' ;
-@import 'variable.scss' ;
+@import 'base/base.scss' ;
+@import 'utils/variable.scss' ;
 @import 'layouts/default.scss' ;
-
+@import 'components/button.scss';
+@import 'components/image.scss';
+@import 'pages/index.scss';
+@import 'utils/fonction.scss';
+@import 'utils/mixins.scss';

@@ -1,0 +1,103 @@
+#head-style
+{
+    background-color: #F2F2F2;
+    text-align: center;
+}
+
+
+// INDEX 
+
+
+
+.indexMain
+{
+    background-color: #F2F2F2;
+    width: 100%;
+
+    & a
+    {
+        text-decoration: none;
+        color: black;
+    }
+
+    & h2
+    {
+        margin-left: 10px;
+        padding-top: 30px;
+    }
+
+    & h3
+    {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    & p
+    {
+          margin-top: 10px;
+        margin-bottom: 10px;  
+    }
+}
+
+.ResUl
+{
+    padding: 0;
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+.ResLi
+{
+    width: 94%;
+    border-radius: 15px;
+	background-color: white;
+	list-style-type: none;
+	margin: 10px;
+	box-shadow: 5px 5px 15px -10px;
+}
+
+
+// FONCTIONNEMENT
+
+.fonctionnement
+{
+    margin-left: 20px;
+
+    & li
+    {
+        border: 2px solid #F2F2F2;
+        border-radius: 15px;
+        background-color: #F2F2F2;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        list-style-type: none;
+        display: flex;
+        margin-right: 20px; 
+    }
+
+    & ul
+    {
+        padding-left: 0;
+    }
+
+    & i
+    {
+        margin-left: 20px;
+        margin-right: 20px;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.number-style
+{
+    position: relative;
+    left: -10px;
+    border: 0px solid #9356DC;
+    background-color: #9356DC;
+    color: white;
+    border-radius: 48px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
