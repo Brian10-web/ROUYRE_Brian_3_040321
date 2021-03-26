@@ -1,12 +1,37 @@
 
-.darker
+
+.heart:hover
 {
-    background-color: grey;
+    opacity: 0%;
 }
 
-.heart-style i:hover
+.heart2:hover
 {
-    background: linear-gradient(to top, #FF79DA,  #9356DC);
+    font-size: 30px;
+    color: #FF79DA;
+    display: block;
+    background: -webkit-linear-gradient(#FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.heart
+{
+    position: relative;
+    top: 23px;
+    right: 23px;
+    font-size: 27px;
+}
+
+.heart2
+{
+    position: absolute;
+    top: 141px;
+    -webkit-text-fill-color: transparent;
+    right: 21px;
+    font-size: 30px;
+    opacity: 100%;
 }
 
 
@@ -86,10 +111,18 @@
 
 .designLi
 {
-    border: 2px solid white;
+    border:0px solid white;
     margin: 10px;
     border-radius: 20px;
     background-color: white;
+    display: flex;
+    overflow: hidden;
+
+    &:hover .blocLi2
+    {
+        right: 100%;
+        transform: translateX(-40px);
+    }
 
     & h3
     {
@@ -119,17 +152,20 @@
         margin-bottom: 5px;
     }
 
+    .blocLi1
+    {
+        width: 100%;
+    }
+
+    .blocLi2
+    {
+        position: absolute;
+        right: 0;
+        background-color: $color-tertiary;
+        transition: left 1s, transform 1s;
+    }
+
 }
-
-
-
-
-
-
-
-
-
-
 
 
 /* FOOTER */
@@ -151,9 +187,4 @@ footer
         width: 20px;
     }
     
-}
-
-.fas
-{
-    font-size: 10px;
 }

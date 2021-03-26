@@ -1,0 +1,12 @@
+.blocLi1
+{
+    width: 100%;
+}
+
+.blocLi2
+{
+    position: absolute;
+    right: 0;
+    background-color: $color-tertiary;
+    transition: left 1s, transform 1s;
+}

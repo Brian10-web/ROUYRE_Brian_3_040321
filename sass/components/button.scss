@@ -2,13 +2,20 @@
 {
     border-radius: 20px;
     color: white;
-    background: linear-gradient(to bottom right, #FF79DA,  #9356DC); 
+    background: linear-gradient(to bottom right, $color-secondary, $color-primary); 
     height: 30px;
-    border: 0px solid #9356DC;
+    border: 0px solid $color-primary;
     margin-top: 25px;
     padding-left: 30px;
     padding-right: 30px;
     margin-bottom: 30px;
+    transform: scale(1);
+    transition-duration: 400ms;
+
+    &:hover
+    {
+        transform: scale(1.2);
+    }
 }
 
 .commande

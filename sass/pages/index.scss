@@ -1,17 +1,20 @@
 #head-style
 {
-    background-color: #F2F2F2;
+    background-color: $color-grey;
     text-align: center;
 }
 
-
+.darker
+{
+    background-color: darken($color-grey, 10%);
+}
 // INDEX 
 
 
 
 .indexMain
 {
-    background-color: #F2F2F2;
+    background-color: $color-grey;
     width: 100%;
 
     & a
@@ -53,7 +56,8 @@
 	background-color: white;
 	list-style-type: none;
 	margin: 10px;
-	box-shadow: 5px 5px 15px -10px;
+	box-shadow: 4px 4px 10px -3px;
+    position: relative;
 }
 
 
@@ -65,14 +69,27 @@
 
     & li
     {
-        border: 2px solid #F2F2F2;
+        border: 0px solid $color-grey;
         border-radius: 15px;
-        background-color: #F2F2F2;
+        background-color: $color-grey;
         margin-top: 20px;
         margin-bottom: 20px;
         list-style-type: none;
         display: flex;
-        margin-right: 20px; 
+        margin-right: 20px;
+        box-shadow: 4px 4px 10px -3px;
+
+
+        &:hover
+        {
+            background-color: lighten($color-primary,30%);
+            :nth-child(0n+2)
+            {
+                color: $color-primary;
+                opacity: 100%;
+            }
+        }
+      
     }
 
     & ul
@@ -87,6 +104,7 @@
         position: relative;
         display: flex;
         align-items: center;
+        opacity: 60%;
     }
 }
 
@@ -94,8 +112,8 @@
 {
     position: relative;
     left: -10px;
-    border: 0px solid #9356DC;
-    background-color: #9356DC;
+    border: 0px solid $color-primary;
+    background-color: $color-primary;
     color: white;
     border-radius: 48px;
     padding-left: 6px;

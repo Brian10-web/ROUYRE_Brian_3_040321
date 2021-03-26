@@ -30,12 +30,33 @@ hr {
   margin-left: 20px;
 }
 
-.darker {
-  background-color: grey;
+.heart:hover {
+  opacity: 0%;
 }
 
-.heart-style i:hover {
-  background: linear-gradient(to top, #FF79DA, #9356DC);
+.heart2:hover {
+  font-size: 30px;
+  color: #FF79DA;
+  display: block;
+  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heart {
+  position: relative;
+  top: 23px;
+  right: 23px;
+  font-size: 27px;
+}
+
+.heart2 {
+  position: absolute;
+  top: 141px;
+  -webkit-text-fill-color: transparent;
+  right: 21px;
+  font-size: 30px;
+  opacity: 100%;
 }
 
 /* PAGES MENU */
@@ -90,10 +111,16 @@ hr {
 }
 
 .designLi {
-  border: 2px solid white;
+  border: 0px solid white;
   margin: 10px;
   border-radius: 20px;
   background-color: white;
+  display: flex;
+  overflow: hidden;
+}
+.designLi:hover .blocLi2 {
+  right: 100%;
+  transform: translateX(-40px);
 }
 .designLi h3 {
   margin: 10px;
@@ -116,6 +143,15 @@ hr {
   margin-top: 5px;
   margin-bottom: 5px;
 }
+.designLi .blocLi1 {
+  width: 100%;
+}
+.designLi .blocLi2 {
+  position: absolute;
+  right: 0;
+  background-color: #99E2D0;
+  transition: left 1s, transform 1s;
+}
 
 /* FOOTER */
 footer {
@@ -134,10 +170,6 @@ footer i {
   width: 20px;
 }
 
-.fas {
-  font-size: 10px;
-}
-
 .button-style {
   border-radius: 20px;
   color: white;
@@ -148,6 +180,11 @@ footer i {
   padding-left: 30px;
   padding-right: 30px;
   margin-bottom: 30px;
+  transform: scale(1);
+  transition-duration: 400ms;
+}
+.button-style:hover {
+  transform: scale(1.2);
 }
 
 .commande {
@@ -197,12 +234,6 @@ footer i {
   justify-content: space-between;
 }
 
-.legImg i {
-  position: relative;
-  top: 20px;
-  right: 20px;
-}
-
 .menuImg {
   height: 300px;
   margin: 0;
@@ -213,6 +244,10 @@ footer i {
 #head-style {
   background-color: #F2F2F2;
   text-align: center;
+}
+
+.darker {
+  background-color: #d9d9d9;
 }
 
 .indexMain {
@@ -248,14 +283,15 @@ footer i {
   background-color: white;
   list-style-type: none;
   margin: 10px;
-  box-shadow: 5px 5px 15px -10px;
+  box-shadow: 4px 4px 10px -3px;
+  position: relative;
 }
 
 .fonctionnement {
   margin-left: 20px;
 }
 .fonctionnement li {
-  border: 2px solid #F2F2F2;
+  border: 0px solid #F2F2F2;
   border-radius: 15px;
   background-color: #F2F2F2;
   margin-top: 20px;
@@ -263,6 +299,14 @@ footer i {
   list-style-type: none;
   display: flex;
   margin-right: 20px;
+  box-shadow: 4px 4px 10px -3px;
+}
+.fonctionnement li:hover {
+  background-color: #e4d5f6;
+}
+.fonctionnement li:hover :nth-child(0n+2) {
+  color: #9356DC;
+  opacity: 100%;
 }
 .fonctionnement ul {
   padding-left: 0;
@@ -273,6 +317,7 @@ footer i {
   position: relative;
   display: flex;
   align-items: center;
+  opacity: 60%;
 }
 
 .number-style {
@@ -284,6 +329,17 @@ footer i {
   border-radius: 48px;
   padding-left: 6px;
   padding-right: 6px;
+}
+
+.blocLi1 {
+  width: 100%;
+}
+
+.blocLi2 {
+  position: absolute;
+  right: 0;
+  background-color: #99E2D0;
+  transition: left 1s, transform 1s;
 }
 
 /*# sourceMappingURL=style.css.map */
