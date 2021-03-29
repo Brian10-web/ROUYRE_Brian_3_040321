@@ -2,20 +2,22 @@
 {
     border-radius: 20px;
     color: white;
-    background: linear-gradient(to bottom right, $color-secondary, $color-primary); 
-    height: 30px;
+    background: linear-gradient(to bottom, $color-secondary, $color-primary); 
+    height: 45px;
     border: 0px solid $color-primary;
-    margin-top: 25px;
     padding-left: 30px;
     padding-right: 30px;
     margin-bottom: 30px;
-    transform: scale(1);
-    transition-duration: 400ms;
+    margin-top: 20px;
+    box-shadow: 4px 4px 10px -3px black;
+    transition-duration: .4s;
 
     &:hover
     {
-        transform: scale(1.2);
+        opacity: 0.9;
+        box-shadow: 4px 4px 10px 1px black;
     }
+
 }
 
 .commande

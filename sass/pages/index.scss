@@ -8,6 +8,48 @@
 {
     background-color: darken($color-grey, 10%);
 }
+
+/*HEART STYLE*/
+
+.heart
+{
+    position: relative;
+    top: 23px;
+    right: 23px;
+    font-size: 27px;
+    
+    &:hover
+    {
+        opacity: 0%;
+    }
+}
+
+.heart2
+{
+    position: absolute;
+    top: 142px;
+    -webkit-text-fill-color: transparent;
+    right: 21px;
+    font-size: 30px;
+    opacity: 100%;
+
+    &:hover
+    {
+        font-size: 30px;
+        color:$color-secondary;
+        display: block;
+        background: -webkit-linear-gradient($color-secondary,$color-primary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: delay 0.4s ease-in-out;
+
+        &:hover + .heart
+        {
+            opacity: 0;
+        }
+    }
+}
+
 // INDEX 
 
 
