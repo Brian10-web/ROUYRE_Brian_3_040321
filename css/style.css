@@ -117,7 +117,7 @@ hr {
   display: flex;
   justify-content: space-between;
   margin-left: 10px;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 .designLi p {
   margin-top: 5px;
@@ -370,6 +370,69 @@ footer i {
   border-radius: 48px;
   padding-left: 6px;
   padding-right: 6px;
+}
+
+@media (min-width: 769px) {
+  .carte {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .fonctionnement ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .fonctionnement li {
+    width: 25%;
+  }
+
+  .paletteImg1 {
+    width: 100%;
+    position: relative;
+    top: -320px;
+  }
+
+  .enchanteeImg1 {
+    width: 100%;
+    position: relative;
+    top: -645px;
+  }
+
+  .francaiseImg1 {
+    width: 100%;
+    position: relative;
+    top: -350px;
+  }
+
+  .deliceImg1 {
+    width: 100%;
+    position: relative;
+    top: -370px;
+  }
+
+  .ResUL {
+    display: flex;
+  }
+
+  .pagesMain {
+    height: auto;
+  }
+
+  .pagesMain ul {
+    width: 32%;
+  }
+
+  .omf-style {
+    position: relative;
+    top: 4px;
+  }
+
+  footer ul {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
