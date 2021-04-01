@@ -119,6 +119,9 @@ hr {
   margin-left: 10px;
   margin-right: 15px;
 }
+.designLi .AlignP :nth-child(2) {
+  font-weight: bold;
+}
 .designLi p {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -142,7 +145,7 @@ hr {
 
 /*DELAY*/
 @keyframes delay {
-  0% {
+  0%, 50% {
     opacity: 0;
   }
   100% {
@@ -176,6 +179,11 @@ footer ul {
 }
 footer i {
   width: 20px;
+  margin-right: 7px;
+}
+footer .contact {
+  color: white;
+  text-decoration: none;
 }
 
 .button-style {
@@ -259,6 +267,78 @@ footer i {
   background-color: #d9d9d9;
 }
 
+body {
+  height: 100%;
+}
+
+/*LOADING SPINNER*/
+.acceuil {
+  z-index: 1;
+  position: relative;
+  animation: chargement1 2s ease-in-out;
+}
+
+@keyframes chargement1 {
+  0%, 90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes chargement {
+  0% {
+    opacity: 1;
+    z-index: 99;
+  }
+  100% {
+    opacity: 0;
+    z-index: -99;
+  }
+}
+.loader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: chargement 2s ease-in-out;
+  opacity: 0;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.dot1 {
+  background-color: #9356DC;
+  animation: jump-up 1s 0.2s linear infinite;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.dot2 {
+  background-color: #FF79DA;
+  animation: jump-up 1s 0.4s linear infinite;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.dot3 {
+  background-color: #99E2D0;
+  animation: jump-up 1s 0.6s linear infinite;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+@keyframes jump-up {
+  50% {
+    transform: translate(0, 20px);
+  }
+}
 /*HEART STYLE*/
 .heart {
   position: relative;
@@ -370,6 +450,17 @@ footer i {
   border-radius: 48px;
   padding-left: 6px;
   padding-right: 6px;
+}
+
+.nouveau {
+  border: 0px solid #99E2D0;
+  background-color: #99E2D0;
+  color: #71d7be;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 @media (min-width: 769px) {
