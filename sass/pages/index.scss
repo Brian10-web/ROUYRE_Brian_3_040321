@@ -238,6 +238,10 @@ body
         display: flex;
         margin-right: 20px;
         box-shadow: 4px 4px 10px -3px;
+        :nth-child(3)
+        {
+            font-weight: bold;
+        }
 
 
         &:hover
