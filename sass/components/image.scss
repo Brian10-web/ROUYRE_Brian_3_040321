@@ -20,21 +20,29 @@
 .paletteImg
 {
     width: 100%;
+    position: relative;
+    top: -45px;
 }
 
 .noteImg
 {
     width: 100%;
+    position: relative;
+    top: -150px;
 }
 
 .francaiseImg
 {
     width: 100%;
+    position: relative;
+    top: -70px;
 }
 
 .deliceImg
 {
     width: 100%;
+    position: relative;
+    top: -70px;
 }
 
 .legImg
@@ -60,3 +68,4 @@
     overflow: hidden;
     z-index: 1;
 }
+

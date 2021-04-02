@@ -11,9 +11,60 @@
 
 
 // //LE format tablette
-// @media (min-width: 576px) { 
+@media (min-width: 576px) 
+{ 
+    .fonctionnement ul
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .fonctionnement li
+    {
+        width: 45%;
+    }
 
-//  }
+    .ResUL
+    {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .ResLi
+    {
+        width: 45%;
+    }
+
+    .paletteImg1
+    {
+        position: relative;
+        top: -185px;
+    }
+
+    .enchanteeImg1
+    {
+        position: relative;
+        top: -385px;
+    }
+
+    .francaiseImg1
+    {
+        position: relative;
+        top: -225px;
+    }
+
+    .deliceImg1
+    {
+        position: relative;
+        top: -215px;
+    }
+
+
+}
 // //  @media (max-width: 768px) { 
 
 // // }
@@ -31,6 +82,7 @@
     .fonctionnement ul
     {
         display: flex;
+        flex-direction: row;
         justify-content: space-around;
         width: 100%;
     }
@@ -71,6 +123,12 @@
     .ResUL
     {
         display: flex;
+        width: 100%;
+    }
+
+    .ResLi
+    {
+        width: 22%;
     }
 
     .pagesMain
