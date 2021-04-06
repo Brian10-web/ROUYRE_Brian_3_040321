@@ -52,7 +52,7 @@ hr {
   border-top-right-radius: 45px;
   position: relative;
   z-index: 2;
-  margin-top: -125px;
+  margin-top: -175px;
   width: 96%;
   padding-top: 1px;
   padding-left: 2%;
@@ -374,7 +374,6 @@ body {
   display: block;
   background: -webkit-linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
-  background-clip: initial;
   -webkit-text-fill-color: transparent;
   animation: delay 0.4s ease-in-out;
 }

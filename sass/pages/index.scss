@@ -135,7 +135,7 @@ body
         display: block;
         background: -webkit-linear-gradient($color-secondary,$color-primary);
         -webkit-background-clip: text;
-        background-clip: initial;
+        // background-clip: initial;
         -webkit-text-fill-color: transparent;
         animation: delay 0.4s ease-in-out;
 
